@@ -1,0 +1,14 @@
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+template:
+  description: Your EKS cluster
+  config:
+    clusterName:
+      description: "The name of your cluster"
+    aws:region:
+      description: The AWS region to deploy into
+      default: us-west-2
