@@ -1,0 +1,3 @@
+config:
+  aws:region: eu-central-1
+  platform-cluster:clusterName: "platform-cluster"

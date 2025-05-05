@@ -1,0 +1,11 @@
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime: nodejs
+template:
+  description: An nginx based website
+  config:
+    name:
+      description: "The name of the website"
+    message:
+      description: "The message to display on the website"
+      default: "Hello world!"
