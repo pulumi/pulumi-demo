@@ -5,7 +5,7 @@ import * as k8s from "@pulumi/kubernetes";
 import { SubnetType } from "@pulumi/awsx/ec2";
 
 const config = new pulumi.Config();
-const clusterName = config.require("clusterName");
+export const clusterName = config.require("clusterName");
 
 const eksVpc = new awsx.ec2.Vpc("platform-cluster", {
     enableDnsHostnames: true,
